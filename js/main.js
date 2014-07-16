@@ -108,7 +108,7 @@ function hideFormCall() {
 
 function sendOrderCall() {
     var sendfrm = true;
-    data = $('.formcall form').serialize() + "@FastComputers",
+    data = $('.formcall form').serialize() + "@FastComputers";
     if (sendfrm) {
         $.ajax({
             type: 'POST',
