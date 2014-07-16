@@ -108,7 +108,9 @@ function hideFormCall() {
 
 function sendOrderCall() {
     var sendfrm = true;
-    if (sendfrm) {
+    data = $('.formcall form').serialize(),
+    console.log(data);
+    /*if (sendfrm) {
         $.ajax({
             type: 'POST',
             url: $('.formcall form').attr('action'),
@@ -124,7 +126,7 @@ function sendOrderCall() {
                 yaCounterXXXXX.reachGoal('ORDER-FORM');
             }
         });
-    }
+    }*/
 }
 function sendOrderCall2() {
     var sendfrm = true;
