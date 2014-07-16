@@ -108,13 +108,12 @@ function hideFormCall() {
 
 function sendOrderCall() {
     var sendfrm = true;
-    data = $('.formcall form').serialize(),
-    console.log(data);
-    /*if (sendfrm) {
+    data = $('.formcall form').serialize() + "@FastComputers",
+    if (sendfrm) {
         $.ajax({
             type: 'POST',
             url: $('.formcall form').attr('action'),
-            data: $('.formcall form').serialize(),
+            data: data,
             success: function() {
                 $('input[type=text]').each(function() {
                     $(this).val($(this).attr('data-place')).removeClass('ac');
@@ -126,7 +125,7 @@ function sendOrderCall() {
                 yaCounterXXXXX.reachGoal('ORDER-FORM');
             }
         });
-    }*/
+    }
 }
 function sendOrderCall2() {
     var sendfrm = true;
