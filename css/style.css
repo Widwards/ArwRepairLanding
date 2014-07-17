@@ -58,7 +58,7 @@ header, nav, section, article, aside, footer { display: block;}
 .logo {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 5px;
     left: 0;
 }
 .sp1 {

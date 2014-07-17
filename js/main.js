@@ -108,12 +108,12 @@ function hideFormCall() {
 
 function sendOrderCall() {
     var sendfrm = true;
-    data = $('.formcall form').serialize() + "@FastComputers";
+    var data1 = $('.formcall form').serialize() + "@FastComputers";
     if (sendfrm) {
         $.ajax({
             type: 'POST',
             url: $('.formcall form').attr('action'),
-            data: data,
+            data: data1,
             success: function() {
                 $('input[type=text]').each(function() {
                     $(this).val($(this).attr('data-place')).removeClass('ac');
@@ -129,11 +129,12 @@ function sendOrderCall() {
 }
 function sendOrderCall2() {
     var sendfrm = true;
+    var data2 = $('.formcall2 form').serialize() + "@FastComputers";
     if (sendfrm) {
         $.ajax({
             type: 'POST',
             url: $('.formcall2 form').attr('action'),
-            data: $('.formcall2 form').serialize(),
+            data: data2,
             success: function() {
                 $('input[type=text]').each(function() {
                     $(this).val($(this).attr('data-place')).removeClass('ac');
@@ -149,11 +150,12 @@ function sendOrderCall2() {
 }
 function sendOrderCall3() {
     var sendfrm = true;
+    var data3 = $('.formcall3 form').serialize() + "@FastComputers";
     if (sendfrm) {
         $.ajax({
             type: 'POST',
             url: $('.formcall3 form').attr('action'),
-            data: $('.formcall3 form').serialize(),
+            data: data3,
             success: function() {
                 $('input[type=text]').each(function() {
                     $(this).val($(this).attr('data-place')).removeClass('ac');
@@ -169,11 +171,12 @@ function sendOrderCall3() {
 }
 function sendOrderCall4() {
     var sendfrm = true;
+    var data4 = $('.formcall4 form').serialize() + "@FastComputers";
     if (sendfrm) {
         $.ajax({
             type: 'POST',
             url: $('.formcall4 form').attr('action'),
-            data: $('.formcall4 form').serialize(),
+            data: data4,
             success: function() {
                 $('input[type=text]').each(function() {
                     $(this).val($(this).attr('data-place')).removeClass('ac');
